@@ -1,0 +1,118 @@
+.card-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background-color: #a1ccd1;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 150px;
+}
+
+h2 {
+  color: #a1ccd1;
+}
+
+select {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #007bff;
+}
+
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.findfalcone {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.findfalcone:hover {
+  background-color: #0056b3;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* CardGrid.css */
+
+/* Style for the container div */
+.radio-container {
+  margin-top: 10px;
+}
+
+/* Style for the vehicle selection label */
+.label {
+  font-weight: bold;
+}
+
+/* Style for individual vehicle labels */
+.vehicle-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style for the radio button input */
+.vehicle-label input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Style for the vehicle information span */
+.vehicle-info {
+  font-size: 14px;
+  color: #333; /* Adjust color as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Adjust styles for screens with a maximum width of 768px */
+  .vehicle-label {
+    font-size: 16px; /* Increase font size */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust styles for screens with a maximum width of 576px */
+  .vehicle-label {
+    font-size: 14px; /* Further decrease font size */
+  }
+  .vehicle-info {
+    font-size: 12px; /* Decrease font size for vehicle info */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  select {
+    width: 100%;
+  }
+
+  .card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

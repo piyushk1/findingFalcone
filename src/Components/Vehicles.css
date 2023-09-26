@@ -1,0 +1,55 @@
+/* YourComponent.css */
+
+/* Style for the container that holds the vehicles */
+.vehicle-container {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for the title */
+.vehicle-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for the row of vehicle cards */
+.vehicle-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style for each vehicle card */
+.vehicle-card {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+}
+
+.vehicle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.vehicle-card:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .vehicle-card {
+    width: calc(50% - 20px);
+    margin: 5px;
+  }
+
+  .vehicle-title {
+    font-size: 20px;
+  }
+}
